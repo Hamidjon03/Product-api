@@ -38,9 +38,9 @@ export class ProductController {
   constructor(private readonly productService: ProductService) {}
 
   @Post()
-  // @UseGuards(JwtAuthGuard)
-  // @Roles(Role.ADMIN)
-  // @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @Roles(Role.ADMIN)
+  @ApiBearerAuth()
   @HttpCode(HttpStatus.CREATED)
   @ApiOperation({ summary: 'Create a new product with image' })
   @ApiConsumes('multipart/form-data')

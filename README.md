@@ -89,7 +89,7 @@ Asosiy API endpointlar:
 
 - **Products**
   - `GET /products` - Barcha mahsulotlarni olish (pagination va search imkoniyati bilan)
-  - `POST /products` - Yangi mahsulot qo'shish (rasm bilan) (Admin)
+  - `POST /products` - Yangi mahsulot qo'shish rasm bilan (Admin)
   - `GET /products/:id` - Mahsulot ma'lumotlarini olish
   - `POST /products/:id/view` - Mahsulot ko'rilganlar sonini oshirish
   - `POST /products/:id/like` - Mahsulotga layk bosish (Autentifikatsiya kerak)
